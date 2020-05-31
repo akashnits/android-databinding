@@ -33,30 +33,24 @@ binding.lifecycleOwner= this - for observing livedata which acts as holder for n
 
 Changes in XML-
 --------------------------------------------------------
+```
 <data>
-        
         <variable
-                  
                 name="viewmodel"
-                type="com.example.android.databinding.basicsample.data.SimpleViewModel"/>
-                
+                type="com.example.android.databinding.basicsample.data.SimpleViewModel"/> 
 </data>
 
 <TextView
-
                 android:id="@+id/plain_name"
-                android:text="@{viewmodel.name}"
-                
+                android:text="@{viewmodel.name}" 
 ... />
 <TextView
-
                 android:id="@+id/likes"
-                android:text="@{Integer.toString(viewmodel.likes)}"
-                
+                android:text="@{Integer.toString(viewmodel.likes)}"                
 ... />
 
 android:onClick="@{() -> viewmodel.onLike()}"  - onLike() of viewmodel will be called
-
+```
 
 Using binding adapters with custom attributes
 --------------------------------------------------------
